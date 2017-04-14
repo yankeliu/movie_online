@@ -1,0 +1,38 @@
+{
+  "name": "imooc",
+  "version": "1.0.0",
+  "description": "imooc movie",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bluebird": "^2.10.2",
+    "body-parser": "^1.17.1",
+	"bower": "^1.5.3",
+    "connect-mongo": "^1.3.2",
+    "connect-multiparty": "^2.0.0",
+    "cookie": "^0.3.1",
+    "cookie-session": "^2.0.0-beta.1",
+    "express": "^4.15.2",
+    "gulp": "^3.9.1",
+    "gulp-express": "^0.3.5",
+    "jade": "^1.11.0",
+    "mongoose": "^4.9.2",
+    "morgan": "^1.8.1",
+    "underscore": "^1.8.3",
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "coffee-script": "^1.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "movie"
+  ],
+  "author": "liu",
+  "license": "ISC"
+}
