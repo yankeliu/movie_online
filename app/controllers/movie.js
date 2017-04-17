@@ -107,7 +107,12 @@ exports.save = function(req, res) {
       if (err) {
         console.log(err)
       }
+	  Category.findById(movie.category, function(err, category) {
 
+          category.movies.splice(category.movies.indexOf(id), 1)
+          category.save(function(err, category) { 
+          })
+        }) 
       /*用post过来的数据来替换掉老数据中的相应字段*/
       _movie = _.extend(movie, movieObj)/*查询得到的movie放第一参数，post过来的放第二参数*/
       _movie.save(function(err, movie) {
